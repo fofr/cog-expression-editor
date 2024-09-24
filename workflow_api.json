@@ -36,18 +36,5 @@
     "_meta": {
       "title": "Load Image"
     }
-  },
-  "35": {
-    "inputs": {
-      "filename_prefix": "R8_Expression",
-      "images": [
-        "14",
-        0
-      ]
-    },
-    "class_type": "SaveImage",
-    "_meta": {
-      "title": "Save Image"
-    }
   }
 }

@@ -71,7 +71,6 @@ class Predictor(BasePredictor):
         expression_editor["smile"] = kwargs["smile"]
         expression_editor["src_ratio"] = kwargs["src_ratio"]
         expression_editor["sample_ratio"] = kwargs["sample_ratio"]
-        expression_editor["sample_parts"] = kwargs["sample_parts"]
         expression_editor["crop_factor"] = kwargs["crop_factor"]
 
     def predict(
@@ -157,7 +156,7 @@ class Predictor(BasePredictor):
             default=1, ge=-0.2, le=1.2, description="Sample ratio"
         ),
         crop_factor: float = Input(
-            default=1.0, ge=0.1, le=10.0, description="Crop factor"
+            default=1.7, ge=1.5, le=2.5, description="Crop factor"
         ),
         output_format: str = optimise_images.predict_output_format(),
         output_quality: int = optimise_images.predict_output_quality(),
@@ -197,5 +196,5 @@ class Predictor(BasePredictor):
         self.comfyUI.run_workflow(workflow)
 
         return optimise_images.optimise_image_files(
-            output_format, output_quality, self.comfyUI.get_files(OUTPUT_DIR)
+            output_format, output_quality, self.comfyUI.get_files(COMFYUI_TEMP_OUTPUT_DIR)
         )
