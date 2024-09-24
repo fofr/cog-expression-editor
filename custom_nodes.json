@@ -1,10 +1,6 @@
 [
   {
-    "repo": "https://github.com/PowerHouseMan/ComfyUI-AdvancedLivePortrait",
-    "commit": "3bba732"
-  },
-  {
-    "repo": "https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite",
-    "commit": "0376e57"
+    "repo": "https://github.com/fofr/ComfyUI-AdvancedLivePortrait",
+    "commit": "1926eb5"
   }
 ]
