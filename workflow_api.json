@@ -1,0 +1,53 @@
+{
+  "14": {
+    "inputs": {
+      "rotate_pitch": 0,
+      "rotate_yaw": 0.30000000000000004,
+      "rotate_roll": 1.6,
+      "blink": 5,
+      "eyebrow": 1.9000000000000001,
+      "wink": 13.100000000000001,
+      "pupil_x": 15,
+      "pupil_y": 6.4,
+      "aaa": 120,
+      "eee": 15,
+      "woo": 15,
+      "smile": -0.3,
+      "src_ratio": 0.76,
+      "sample_ratio": 0.67,
+      "sample_parts": "OnlyExpression",
+      "crop_factor": 1.7000000000000002,
+      "src_image": [
+        "15",
+        0
+      ]
+    },
+    "class_type": "ExpressionEditor",
+    "_meta": {
+      "title": "Expression Editor (PHM)"
+    }
+  },
+  "15": {
+    "inputs": {
+      "image": "input.png",
+      "upload": "image"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Load Image"
+    }
+  },
+  "35": {
+    "inputs": {
+      "filename_prefix": "R8_Expression",
+      "images": [
+        "14",
+        0
+      ]
+    },
+    "class_type": "SaveImage",
+    "_meta": {
+      "title": "Save Image"
+    }
+  }
+}

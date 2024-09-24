@@ -561,7 +561,8 @@
     "segm/person_yolov8s-seg.pt",
     "segm/skin_yolov8m-seg_400.pt",
     "segm/skin_yolov8n-seg_400.pt",
-    "segm/skin_yolov8n-seg_800.pt"
+    "segm/skin_yolov8n-seg_800.pt",
+    "face_yolov8n.pt"
   ],
   "LAYER_MODEL": [
     "layer_sd15_bg2fg.safetensors",
