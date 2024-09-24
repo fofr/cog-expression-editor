@@ -25,75 +25,19 @@ build:
     - soundfile
     - kornia>=0.7.1
     - websocket-client==1.6.3
-    - diffusers>=0.30.0
 
     # fix for pydantic issues in cog
     # https://github.com/replicate/cog/issues/1623
     - albumentations==1.4.3
 
-    # was-node-suite-comfyui
-    # https://github.com/WASasquatch/was-node-suite-comfyui/blob/main/requirements.txt
-    - cmake
-    - imageio
-    - joblib
-    - matplotlib
-    - pilgram
-    - scikit-learn
-    - rembg
-
-    # ComfyUI_essentials
-    - numba
-
-    # ComfyUI_FizzNodes
-    - pandas
-    - numexpr
-
-    # comfyui-reactor-node
-    - insightface
-    - onnx
-
-    # ComfyUI-Impact-Pack
-    - segment-anything
-    - piexif
-
-    # ComfyUI-Impact-Subpack
-    - ultralytics!=8.0.177
-
-    # comfyui_segment_anything
-    - timm
-
-    # comfyui_controlnet_aux
-    # https://github.com/Fannovel16/comfyui_controlnet_aux/blob/main/requirements.txt
-    - importlib_metadata
-    - opencv-python-headless>=4.0.1.24
-    - filelock
-    - numpy
-    - scikit-image
-    - python-dateutil
-    - mediapipe
-    - svglib
-    - fvcore
-    - yapf
-    - omegaconf
-    - ftfy
-    - addict
-    - yacs
-    - trimesh[easy]
-
-    # ComfyUI-KJNodes
-    - librosa
-    - color-matcher
-
-    # PuLID
-    - facexlib
-
-    # SUPIR
-    - open-clip-torch>=2.24.0
-    - pytorch-lightning>=2.2.1
-
-    # For train.py
-    - huggingface_hub
+    - numpy>=1.26.4
+    - opencv-python-headless
+    - imageio-ffmpeg>=0.5.1
+    - lmdb>=1.4.1
+    - rich>=13.7.1
+    - ultralytics
+    - tyro==0.8.5
+    - dill
   run:
     - curl -o /usr/local/bin/pget -L "https://github.com/replicate/pget/releases/download/v0.8.1/pget_linux_x86_64" && chmod +x /usr/local/bin/pget
-    - pip install onnxruntime-gpu --extra-index-url https://aiinfra.pkgs.visualstudio.com/PublicPackages/_packaging/onnxruntime-cuda-12/pypi/simple/
 predict: "predict.py:Predictor"
